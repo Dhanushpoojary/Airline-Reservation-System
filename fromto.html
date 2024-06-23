@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head> <title>airline reservation system</title>
+  <link rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+    body{text-align:center;
+      background-image:url("planee.jpeg");
+      background-repeat:no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;}
+    h1{
+    
+     background-color:red;
+      }
+    </style>
+  </head>
+   <body>
+   	<h1 style=color:black width=100px>SKYLINE AIRWAYS</h1>
+     <div class="container">
+    
+     <form method="POST" action="fromto.php">
+      <br><br><label for="source"style=color:black>FROM<span class="glyphicon glyphicon-plane">&emsp;</span></label>
+      <select name="source" id="source" required>
+        <option value="">select</option>
+        <option value="Bangalore">Bangalore</option>
+         <option value="Mumbai">Mumbai</option>
+         <option value="Delhi">Delhi</option>
+       </select> <br><br>
+         <label for="destination" style=color:black>&emsp;&nbsp;TO<span class="glyphicon glyphicon-plane">&emsp;</span></label>
+         <select name="destination" id="destination" required>
+         <option value="">select</option>
+          <option value="Bangalore">Bangalore</option>
+           <option value="Mumbai">Mumbai</option>
+           <option value="Delhi">Delhi</option>
+        </select> <br><br>
+         <label for="departure" style=color:black >&emsp;&emsp;&emsp;&emsp;DATE OF DEPARTURE  &emsp;</label>
+          <input type="date" id="departure" name="departure" min="2022-12-20" required> <br><br>
+          <label for="travellers" style=color:black>&nbsp;&nbsp;NO OF TRAVELLERS&emsp;&nbsp;</label>
+          <select name="travellers" id="travellers" required>
+          <option value="">select</option>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+        </select> <br><br>
+        <input type="submit" class="btn btn-primary" name="submit"value="Search Flights"/>
+     </form>
+    </div>
+   </body>
+    </html>
